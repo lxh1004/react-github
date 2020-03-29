@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+img {
+    width: 100%;
+}
+html, body, #root, .wrap {
+    width: 100%;
+    height: 100%;
+}
+.login-wrap {
+    width: 100%;
+    height: 100%;
+    background: skyblue;
+    position: relative;
+    .con {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 400px;
+        height: 300px;
+        background: #ffffff;
+        border: 1px solid #eeeeee;
+        border-radius: 5px;
+        padding: 15px;
+        p {
+            width: 100%;
+            padding: 10px 0;
+        }
+        button {
+            width: 100%;
+            height: 45px;
+            background: skyblue;
+            color: #ffffff;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    }
+}
+.home-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    aside {
+        width: 200px;
+        overflow: hidden;
+        color: #ffffff;
+        text-align: center;
+        nav {
+            float: left;
+            width: 80px;
+            height: 100%;
+            background: #292996;
+            padding-top: 100px;
+            span {
+                display: block;
+                width: 100%;
+                height: 80px;
+                line-height: 80px;
+                cursor: pointer;
+                color: #333333;
+                &.active {
+                    background: blue;
+                    color: #ffffff;
+                }
+            }
+        }
+        .submenu {
+            float: left;
+            width: 120px;
+            height: 100%;
+            background: blue;
+            h2 {
+                line-height: 100px;
+                border-bottom: 2px solid #ffffff;
+            }
+            a {
+                text-decoration: none;
+                display: block;
+                color: #333333;
+                line-height: 45px;
+                &.active {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .top {
+            width: 100%;
+            height: 100px;
+            background: #ffffff;
+            .user {
+                height: 50px;
+                border-bottom: 1px solid #999999;
+                text-align: right;
+                padding-right: 20px;
+                span {
+                    padding: 10px;
+                }
+            }
+            nav {
+                height: 50px;
+                overflow: hidden;
+                p {
+                    float: left;
+                    position: relative;
+                    span {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 20px;
+                        height: 20px;
+                        border: 1px solid #000000;
+                    }
+                }
+            }
+            a {
+                text-decoration: none;
+                padding: 10px;
+                border: 1px solid #cccccc;
+                color: #333333;
+                display: block;
+                &.active {
+                    background: #cccccc;
+                }
+            }
+        }
+        .con {
+            flex: 1;
+            overflow: hidden;
+            background: #eeeeee;
+        }
+    }
+}
